@@ -1,14 +1,16 @@
 package com.bridgelabz;
+
 import java.util.LinkedList;
+
 public class LinkedLists {
     public static void main(String[] args) {
 
-            LinkedListLogic linkedListLogic = new LinkedListLogic();
-            linkedListLogic.insertNode(70);
-            linkedListLogic.insertNode(30);
-            linkedListLogic.insertNode(56);
-            linkedListLogic.toPrint();
-        }
+        LinkedListLogic linkedlistlogic = new LinkedListLogic();
+        linkedlistlogic.insertNode(56);
+        linkedlistlogic.appending(56, 30);
+        linkedlistlogic.appending(30, 70);
+        linkedlistlogic.toPrint();
     }
+}
 
 
