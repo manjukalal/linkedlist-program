@@ -1,6 +1,7 @@
 package com.bridgelabz;
 
 
+
 public class LinkedListLogic {
     Node head;
 
@@ -39,7 +40,17 @@ public class LinkedListLogic {
         presentNode.next = node;
     }
 
-    public void firstDelete() {
-        head = head.next;
+    //    public void firstDelete() {
+//        head = head.next;
+//    }
+    public void lastDelete() {
+        Node presentNode = head, secondLast = null;
+        while (presentNode.next != null) {
+            secondLast = presentNode;
+            presentNode = presentNode.next;
+        }
+        if (secondLast != null) {
+            secondLast.next = null;
+        }
     }
 }
