@@ -12,7 +12,7 @@ public class LinkedLists {
     linkedListLogic.insertBetween(56, 70, 30);
     linkedListLogic.toPrint();
     linkedListLogic.searcNode(56);
-
+    linkedListLogic.insertNumber(30,40);
     linkedListLogic.toPrint();
   }
 }
